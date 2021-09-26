@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        sh '1'
+        git(changelog: true, url: 'https://github.com/geliming/star', branch: 'main')
       }
     }
 
